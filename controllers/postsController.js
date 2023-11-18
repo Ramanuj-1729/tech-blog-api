@@ -52,7 +52,7 @@ const postsController = {
 
             try {
                 postsDocument = await Posts.create({
-                    thumbnail: filePath,
+                    thumbnail: `https://techblog-api-xktm.onrender.com/${filePath}`,
                     userName,
                     title,
                     body,
