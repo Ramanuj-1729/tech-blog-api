@@ -1,8 +1,15 @@
-import dotenv from 'dotenv';
-dotenv.config();
+require('dotenv').config();
 
-export const {
+const {
     APP_PORT,
     DB_URL,
     DEBUG_MODE,
 } = process.env;
+
+module.exports = {
+    APP_PORT,
+    DB_URL,
+    DEBUG_MODE,
+};
+
+
